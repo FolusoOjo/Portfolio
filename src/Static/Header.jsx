@@ -14,7 +14,7 @@ function Header() {
             <p>Work</p>
           </Link>
 
-          <Link to="/mainabout">
+          <Link to="/about">
             <p>About</p>
           </Link>
 

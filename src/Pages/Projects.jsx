@@ -15,11 +15,11 @@ function Projects() {
         <Wrapper>
           <Flex>
             <Text>
-              <h3>
+              <p>
                 Here are some projects that demonstrate my skills in frontend
                 development, from responsive design and interactive user
                 experiences to efficient code and modern design techniques.
-              </h3>
+              </p>
             </Text>
           </Flex>
 
@@ -37,8 +37,8 @@ function Projects() {
             description="Partnered with a colleague to build a responsive website that pinpoints your location using IP Geolocation. This site is accessible on all devices and provides accurate location information from anywhere globally, combining design and functionality to offer seamless user experience."
             Year="October, 2024."
             Role="Front-End Developer"
-            link='https://folusoojo.github.io/ip-address-tracker/'
-            gitLink='https://github.com/FolusoOjo/ip-address-tracker.git'
+            link="https://folusoojo.github.io/ip-address-tracker/"
+            gitLink="https://github.com/FolusoOjo/ip-address-tracker.git"
           />
 
           <Card
@@ -47,8 +47,8 @@ function Projects() {
             description="Fetched data from an API to display comprehensive information on countries and regions worldwide. The site dynamically shows each country’s population, currency, and capital, providing users with an interactive and informative view of global data."
             Year="September, 2024."
             Role="Front-End Developer"
-            link='https://folusoojo.github.io/rest-countries-api/'
-            gitLink='https://github.com/FolusoOjo/rest-countries-api.git'
+            link="https://folusoojo.github.io/rest-countries-api/"
+            gitLink="https://github.com/FolusoOjo/rest-countries-api.git"
           />
 
           <Card
@@ -117,12 +117,15 @@ const Flex = styled.div`
   justify-content: space-between;
 `;
 const Text = styled.div`
-  border: 2px dotted darkblue;
-  width: 50%;
+  /* border: 2px dotted darkblue; */
+  width: 60%;
   display: flex;
   align-items: center;
 
-  h3 {
-    width: 70%;
+  p {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
   }
 `;

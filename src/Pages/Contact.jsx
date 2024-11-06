@@ -1,15 +1,10 @@
 import styled from "styled-components";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
+import Contactlink from "../UI/Contactlink";
 
 function Contact() {
   return (
     <Container>
       <Wrapper>
-
-
         <Text>
           <h3>LET&apos;S CONNECT</h3>
 
@@ -20,14 +15,13 @@ function Contact() {
             </p>
           </div>
 
-          <Icons>
-            <FaLinkedinIn />
-            <FaGithub />
-            <FaXTwitter />
-            <BsInstagram />
-          </Icons>
+          <Contactlink
+            linked="https://www.linkedin.com/in/folusoojo"
+            linkgit="https://github.com/FolusoOjo"
+            linkig="https://www.instagram.com/torhbah/"
+            linktweet="https://x.com/torhbah"
+          />
         </Text>
-
 
         <Form>
           <form action="">
@@ -49,9 +43,9 @@ function Contact() {
             <label htmlFor="message">Message:</label>
             <textarea name="message" id="message"></textarea>
           </form>
-        </Form>
 
-        
+          <button>SUBMIT</button>
+        </Form>
       </Wrapper>
     </Container>
   );
@@ -59,13 +53,13 @@ function Contact() {
 export default Contact;
 
 const Container = styled.div`
-  background-color: yellow;
+  /* background-color: yellow; */
   min-height: calc(100vh - 70px);
   max-width: 1300px;
   margin: auto;
 `;
 const Wrapper = styled.div`
-  background-color: red;
+  /* background-color: red; */
   margin: 0 auto;
   min-height: calc(100vh - 70px);
   margin-top: 70px;
@@ -76,7 +70,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 const Text = styled.div`
-  border: 2px solid darkblue;
+  /* border: 2px solid darkblue; */
   width: 50%;
   text-align: center;
 
@@ -96,15 +90,8 @@ const Text = styled.div`
   }
 `;
 
-const Icons = styled.div`
-  border: 2px solid darkolivegreen;
-  width: 2px;
-  font-size: 30px;
-  display: flex;
-  justify-content: space-between;
-`;
 const Form = styled.div`
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   width: 40%;
 
   label {
@@ -113,7 +100,7 @@ const Form = styled.div`
     padding: 5px 0;
   }
   input {
-    width: 58%;
+    width: 80%;
     height: 30px;
     outline: transparent;
     /* border: transparent; */
@@ -121,8 +108,16 @@ const Form = styled.div`
   }
   textarea {
     resize: none;
-    height: 70px;
-    width: 255px;
+    height: 150px;
+    width: 80%;
     border: 1px solid black;
+  }
+  button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    outline: transparent;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: darkblue;
   }
 `;
