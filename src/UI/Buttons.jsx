@@ -2,20 +2,22 @@ import styled from "styled-components";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-function Buttons() {
+// {linkResume, linked, linkGit}
+
+function Buttons(props) {
   return (
     <>
       <Button>
         <Download>
-          <a href="">DOWNLOAD RESUME</a>
+          <a href={props.linkResume}>DOWNLOAD RESUME</a>
         </Download>
         <Image>
-          <a href="">
+          <a href={props.linked}>
             <FaLinkedin />
           </a>
         </Image>
         <Image>
-          <a href="">
+          <a href={props.linkGit}>
             <FaGithub />
           </a>
         </Image>

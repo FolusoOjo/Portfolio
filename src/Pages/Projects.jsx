@@ -128,4 +128,17 @@ const Text = styled.div`
     font-weight: 400;
     line-height: 1.2;
   }
+
+  @media (max-width: 800px) {
+    min-width: 100%;
+    border: 2px solid rebeccapurple;
+    /* background-color: red; */
+    p {
+      min-width: 100%;
+      padding: 10px;
+      border: 2px solid red;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
 `;

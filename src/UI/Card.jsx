@@ -65,18 +65,20 @@ const Main = styled.div`
   /* background-color: red; */
   margin: 50px auto;
   margin-top: 20px;
-  /* width: 85%; */
-  /* margin: auto; */
-  /* padding: 0 50px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 
   div {
-    /* border: 3px solid green; */
     width: 50%;
-    /* background-color: aliceblue; */
+  }
+
+  @media (max-width: 800px) {
+    display: block;
+    div {
+      width: 100%;
+    }
   }
 `;
 const Text = styled.div`
@@ -98,6 +100,10 @@ const Text = styled.div`
       width: 103%;
       line-height: 1.3;
     }
+  }
+
+  @media (max-width: 800px) {
+    margin: auto;
   }
 `;
 
@@ -150,6 +156,17 @@ const Imagediv = styled.div`
       width: 290px;
       border-radius: 10px;
       text-align: center;
+    }
+  }
+
+  @media (max-width: 800px) {
+    div {
+      background-color: hotpink;
+      height: 200px;
+      width: 90%;
+      img {
+        width: 220px;
+      }
     }
   }
 `;

@@ -86,7 +86,7 @@ const Text = styled.div`
     }
   }
 `;
-const More = styled.p`
-  font-size: 18px;
-  text-decoration: underline;
-`;
+// const More = styled.p`
+//   font-size: 18px;
+//   text-decoration: underline;
+// `;
