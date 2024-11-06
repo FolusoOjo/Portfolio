@@ -3,6 +3,7 @@ import Buttons from "../UI/Buttons";
 import homeimg from "../assets/homeImg.jpeg";
 import About from "./About";
 import Projects from "./Projects";
+import Contacts from "./Contact";
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       </Container>
       <Projects />
       <About />
+      <Contacts />
     </>
   );
 }

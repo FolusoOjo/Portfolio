@@ -41,11 +41,15 @@ function Card({ Images, Title, description, year, Year, Role, link, gitLink }) {
 
               <Flexed>
                 <div>
-                  <a href={link}>Live Demo</a>
+                  <a href={link} target="_blank">
+                    Live Demo
+                  </a>
                   <MdArrowOutward />
                 </div>
                 <div>
-                  <a href={gitLink}>See on Github</a>
+                  <a href={gitLink} target="_blank">
+                    See on Github
+                  </a>
                   <FaGithub />
                 </div>
               </Flexed>

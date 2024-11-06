@@ -1,14 +1,23 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
       <Flex>
-        <h6>FolusoOjo</h6>
+        <Link to="/">
+          <h6>FolusoOjo</h6>
+        </Link>
 
         <Info>
-          <p>Work</p>
-          <p>About</p>
+          <Link to="/projects">
+            <p>Work</p>
+          </Link>
+
+          <Link to="/mainabout">
+            <p>About</p>
+          </Link>
+
           <p>Contact</p>
         </Info>
       </Flex>
@@ -21,7 +30,6 @@ const Flex = styled.div`
   display: flex;
   background-color: hotpink;
   height: 70px;
-  /* margin-bottom: 70px; */
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;

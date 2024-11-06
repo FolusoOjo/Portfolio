@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import Buttons from "../UI/Buttons";
 
-function About() {
+function Mainabout() {
   return (
     <>
       <Container>
@@ -23,9 +23,7 @@ function About() {
                 visually engaging. Let’s connect if you’re interested in
                 collaborating!
               </p>
-              <Link to="/mainabout">
-                <More>More about me</More>
-              </Link>
+              <Buttons />
             </div>
           </Text>
         </Wrapper>
@@ -33,21 +31,22 @@ function About() {
     </>
   );
 }
-export default About;
+export default Mainabout;
 
 const Container = styled.div`
   /* background-color: yellow; */
   max-width: 1300px;
+  min-height: calc (100vh -70px);
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 70px;
-  min-height: calc(100vh - 70px);
 
   @media (max-width: 800px) {
     background-color: red;
     width: 100%;
+    min-height: calc(100vh - 70px);
   }
 `;
 const Wrapper = styled.div`
