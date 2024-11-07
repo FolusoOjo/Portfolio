@@ -162,11 +162,12 @@ const Imagediv = styled.div`
     background-color: brown;
     width: 80%;
     height: 300px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     img {
-      width: 290px;
+      width: 350px;
       border-radius: 10px;
       text-align: center;
     }
