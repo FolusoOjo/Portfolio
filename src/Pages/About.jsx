@@ -11,7 +11,7 @@ function About() {
 
             <div>
               <h4>I am a front-end developer based in Lagos, Nigeria.</h4>
-              <h4>Turns out I have a degree in Microbiology</h4>
+              <h4>Turns out I have a degree in Microbiology.</h4>
               <p>
                 Hey there! I’m a frontend developer with an unexpected
                 background in microbiology, which has given me a unique
@@ -46,7 +46,7 @@ const Container = styled.div`
   min-height: calc(100vh - 70px);
 
   @media (max-width: 800px) {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
   }
 `;
@@ -57,6 +57,7 @@ const Wrapper = styled.div`
   margin: auto;
   padding: 10px;
 `;
+
 const Text = styled.div`
   display: flex;
   justify-content: space-between;
@@ -84,6 +85,26 @@ const Text = styled.div`
       margin-top: 20px;
       font-size: 17px;
       line-height: 1.8;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: block;
+    h2 {
+      width: 100%;
+      margin: 10px 0;
+    }
+    div {
+      width: 100%;
+      h4 {
+        text-align: center;
+        padding: 0 20px;
+        font-size: 23px;
+      }
+
+      p {
+        margin: 15px auto 10px;
+      }
     }
   }
 `;

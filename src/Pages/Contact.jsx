@@ -25,23 +25,31 @@ function Contact() {
 
         <Form>
           <form action="">
-            <label htmlFor="name">Name:</label>
-            <input type="text" />
+            <p>
+              <label htmlFor="name">Name:</label>
+              <input type="text" />
+            </p>
           </form>
 
           <form action="">
-            <label htmlFor="email">Email:</label>
-            <input type="email" />
+            <p>
+              <label htmlFor="email">Email:</label>
+              <input type="email" />
+            </p>
           </form>
 
           <form action="">
-            <label htmlFor="subject">Subject:</label>
-            <input type="text" />
+            <p>
+              <label htmlFor="subject">Subject:</label>
+              <input type="text" />
+            </p>
           </form>
 
           <form action="">
-            <label htmlFor="message">Message:</label>
-            <textarea name="message" id="message"></textarea>
+            <p>
+              <label htmlFor="message">Message:</label>
+              <textarea name="message" id="message"></textarea>
+            </p>
           </form>
 
           <button>SUBMIT</button>
@@ -58,6 +66,7 @@ const Container = styled.div`
   max-width: 1300px;
   margin: auto;
 `;
+
 const Wrapper = styled.div`
   /* background-color: red; */
   margin: 0 auto;
@@ -68,7 +77,14 @@ const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (max-width: 800px) {
+    border: 2px solid cornflowerblue;
+    display: block;
+    margin: 0 auto;
+  }
 `;
+
 const Text = styled.div`
   /* border: 2px solid darkblue; */
   width: 50%;
@@ -87,6 +103,10 @@ const Text = styled.div`
     p {
       padding: 5px 0;
     }
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
   }
 `;
 
@@ -114,10 +134,22 @@ const Form = styled.div`
   }
   button {
     margin-top: 20px;
-    padding: 15px 30px;
+    width: 90px;
+    height: 45px;
     outline: transparent;
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: darkblue;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    p {
+      text-align: center;
+    }
+    button {
+      text-align: center;
+      /* width: 100%; */
+    }
   }
 `;

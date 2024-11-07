@@ -61,6 +61,7 @@ function Card({ Images, Title, description, year, Year, Role, link, gitLink }) {
   );
 }
 export default Card;
+
 const Main = styled.div`
   /* background-color: red; */
   margin: 50px auto;
@@ -81,8 +82,9 @@ const Main = styled.div`
     }
   }
 `;
+
 const Text = styled.div`
-  border: 2px solid green;
+  /* border: 2px solid green; */
   margin: 5px 0;
   padding-left: 5px;
 
@@ -103,7 +105,13 @@ const Text = styled.div`
   }
 
   @media (max-width: 800px) {
-    margin: auto;
+    /* border: 5px solid red; */
+    padding-top: 10px;
+    width: 100%;
+    div {
+      /* border: 2px solid yellow; */
+      margin: auto;
+    }
   }
 `;
 
@@ -134,12 +142,17 @@ const ProjectText = styled.div`
     outline: transparent;
     border-color: transparent;
   }
+  @media (max-width: 800px) {
+    /* border: 2px solid yellow; */
+    margin: auto;
+  }
 `;
+
 const Titled = styled.div`
   /* background-color: skyblue; */
 `;
 const Imagediv = styled.div`
-  background-color: aliceblue;
+  background-color: ;
   display: flex;
   align-items: center;
   justify-content: center;
