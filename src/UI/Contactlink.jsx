@@ -1,10 +1,10 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
+import { IoMdMail } from "react-icons/io";
 import styled from "styled-components";
 
-function Contactlink({ linked, linkgit, linktweet, linkig }) {
+function Contactlink({ linked, linkgit, linktweet, linkmail }) {
   return (
     <>
       <Icons>
@@ -17,8 +17,8 @@ function Contactlink({ linked, linkgit, linktweet, linkig }) {
         <a href={linktweet} target="_blank">
           <FaXTwitter />
         </a>
-        <a href={linkig} target="_blank">
-          <BsInstagram />
+        <a href={linkmail} target="_blank">
+          <IoMdMail />
         </a>
       </Icons>
     </>

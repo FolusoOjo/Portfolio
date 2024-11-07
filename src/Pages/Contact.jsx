@@ -18,7 +18,7 @@ function Contact() {
           <Contactlink
             linked="https://www.linkedin.com/in/folusoojo"
             linkgit="https://github.com/FolusoOjo"
-            linkig="https://www.instagram.com/torhbah/"
+            linkmail="mailto:folusoojo96@gmail.com"
             linktweet="https://x.com/torhbah"
           />
         </Text>
@@ -112,7 +112,10 @@ const Text = styled.div`
 
 const Form = styled.div`
   /* border: 2px solid yellow; */
-  width: 40%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   label {
     display: block;
@@ -120,7 +123,7 @@ const Form = styled.div`
     padding: 5px 0;
   }
   input {
-    width: 80%;
+    width: 100%;
     height: 30px;
     outline: transparent;
     /* border: transparent; */
@@ -128,18 +131,22 @@ const Form = styled.div`
   }
   textarea {
     resize: none;
-    height: 150px;
-    width: 80%;
+    height: 120px;
+    width: 100%;
     border: 1px solid black;
   }
   button {
     margin-top: 20px;
-    width: 90px;
+    width: 170px;
     height: 45px;
     outline: transparent;
     border: 1px solid transparent;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: darkblue;
+  }
+
+  form {
+    width: 50%;
   }
 
   @media (max-width: 800px) {
@@ -150,6 +157,9 @@ const Form = styled.div`
     button {
       text-align: center;
       /* width: 100%; */
+    }
+    form {
+      width: 75%;
     }
   }
 `;
