@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: skyblue;
-  color: white;
+  /* background-color: skyblue; */
+  /* color: white; */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }

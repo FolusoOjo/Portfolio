@@ -90,7 +90,7 @@ const Text = styled.div`
 
   div {
     width: 90%;
-    color: white;
+    /* color: white; */
 
     h4 {
       font-size: 20px;
@@ -121,14 +121,14 @@ const ProjectText = styled.div`
   padding-left: 5px;
 
   h5 {
-    color: white;
+    /* color: white; */
     font-size: 17px;
     padding-bottom: 5px;
     /* border-bottom: 1px solid black; */
   }
 
   div {
-    color: white;
+    /* color: white; */
     padding: 5px 0;
     /* border-bottom: 1px solid black; */
     display: flex;
@@ -186,8 +186,9 @@ const Imagediv = styled.div`
 `;
 const Flexed = styled.div`
   display: flex;
+  /* border: 2px solid red; */
   align-items: flex-start;
-  color: white;
+  /* color: white; */
   margin-top: 5px;
   cursor: pointer;
   font-size: 17px;
@@ -201,6 +202,8 @@ const Flexed = styled.div`
 
     a {
       margin-right: 5px;
+      font-size: 15px;
+      color: black;
       text-decoration: none;
     }
   }

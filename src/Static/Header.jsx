@@ -19,7 +19,9 @@ function Header() {
             <p>About</p>
           </Link>
 
-          <p>Contact</p>
+          <Link to="/contact">
+            <p>Contact</p>
+          </Link>
 
           <span>
             <RxHamburgerMenu />
@@ -33,7 +35,8 @@ export default Header;
 
 const Flex = styled.div`
   display: flex;
-  background-color: hotpink;
+  background-color: black;
+  color: white;
   height: 70px;
   align-items: center;
   justify-content: space-between;
@@ -47,6 +50,8 @@ const Flex = styled.div`
     font-family: "Itim", cursive;
     font-weight: 540;
     font-style: normal;
+    color: white;
+
     font-size: 15px;
   }
 
@@ -70,6 +75,7 @@ const Info = styled.div`
     font-weight: 540;
     font-style: normal;
     font-size: 15px;
+    color: white;
   }
   span {
     display: none;
