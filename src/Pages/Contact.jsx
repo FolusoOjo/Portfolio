@@ -3,7 +3,7 @@ import Contactlink from "../UI/Contactlink";
 
 function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Wrapper>
         <Text>
           <h3>LET&apos;S CONNECT</h3>
@@ -123,6 +123,7 @@ const Form = styled.div`
     padding: 5px 0;
   }
   input {
+    padding: 5px;
     width: 100%;
     height: 30px;
     outline: transparent;
@@ -138,6 +139,8 @@ const Form = styled.div`
   button {
     margin-top: 20px;
     width: 170px;
+    color: white;
+    font-size: 16px;
     height: 45px;
     outline: transparent;
     border: 1px solid transparent;

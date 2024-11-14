@@ -44,9 +44,10 @@ const Download = styled.button`
   outline: none;
   border-color: transparent;
   padding: 10px;
+  b
 
   a {
-    color: red;
+    color: black;
     text-decoration: none;
   }
 `;

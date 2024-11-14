@@ -8,7 +8,7 @@ import Contacts from "./Contact";
 function Home() {
   return (
     <>
-      <Container>
+      <Container id="home">
         <Wrapper>
           <div>
             <h3>Hi, I am </h3>

@@ -159,7 +159,7 @@ const Imagediv = styled.div`
   /* padding: 30px; */
   width: 50%;
   div {
-    background-color: brown;
+    background-color: #cacaca;
     width: 80%;
     height: 300px;
     border-radius: 5px;

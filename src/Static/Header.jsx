@@ -1,33 +1,71 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import {useState} from "react"
+import Sidebar from "../Pages/SideBar";
 
 function Header() {
+  const scrollToSection = (idPassed) => {
+    const Section = document.getElementById(idPassed);
+    Section?.scrollIntoView({ behavior: "smooth" });
+    console.log("I have been clicked");
+  };
+
+  const [toggle, setToggle] = useState(false)
+  const navigation = () => {
+
+    setToggle(!toggle)
+    console.log(toggle);
+    
+
+   
+    // setToggle(false);
+  };
+
   return (
     <>
       <Flex>
-        <Link to="/">
-          <h6>FolusoOjo</h6>
-        </Link>
+        <h6>FolusoOjo</h6>
 
         <Info>
-          <Link to="/projects">
+          <Link to="/">
+            <p>Home</p>
+          </Link>
+
+          <Link
+            to="#"
+            onClick={() => {
+              scrollToSection("project");
+            }}
+          >
             <p>Work</p>
           </Link>
 
-          <Link to="/mainabout">
+          <Link
+            to="#"
+            onClick={() => {
+              scrollToSection("mainabout");
+            }}
+          >
             <p>About</p>
           </Link>
 
-          <Link to="/contact">
+          <Link
+            to="#"
+            onClick={() => {
+              scrollToSection("contact");
+            }}
+          >
             <p>Contact</p>
           </Link>
 
           <span>
-            <RxHamburgerMenu />
+            <RxHamburgerMenu onClick={navigation} />
           </span>
         </Info>
       </Flex>
+
+      {toggle && <Sidebar/>}
     </>
   );
 }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <>
-      <Container>
+      <Container id="about">
         <Wrapper>
           <Text>
             <h2>About Me</h2>
@@ -48,6 +48,7 @@ const Container = styled.div`
   @media (max-width: 800px) {
     /* background-color: red; */
     width: 100%;
+    margin-top: 70px;
   }
 `;
 const Wrapper = styled.div`

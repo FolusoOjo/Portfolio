@@ -11,7 +11,7 @@ import facebook from "../assets/facebook.png";
 function Projects() {
   return (
     <>
-      <Container>
+      <Container id="project">
         <Wrapper>
           <Flex>
             <Text>
@@ -101,6 +101,10 @@ const Container = styled.div`
   min-height: calc(100vh - 70px);
   max-width: 1280px;
   margin: auto;
+
+  @media (max-width: 800px) {
+    margin-top: 80px;
+  }
 `;
 const Wrapper = styled.div`
   /* background-color: coral; */
@@ -131,12 +135,12 @@ const Text = styled.div`
 
   @media (max-width: 800px) {
     min-width: 100%;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
     /* background-color: red; */
     p {
       min-width: 100%;
       padding: 10px;
-      border: 2px solid red;
+      /* border: 2px solid red; */
       font-size: 15px;
       font-weight: 400;
     }
