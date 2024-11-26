@@ -4,20 +4,20 @@ import { FaGithub } from "react-icons/fa";
 
 // {linkResume, linked, linkGit}
 
-function Buttons(props) {
+function Buttons({ linkResume, linked, linkGit }) {
   return (
     <>
       <Button>
         <Download>
-          <a href={props.linkResume}>DOWNLOAD RESUME</a>
+          <a href={linkResume}>DOWNLOAD RESUME</a>
         </Download>
         <Image>
-          <a href={props.linked}>
+          <a href={linked}>
             <FaLinkedin />
           </a>
         </Image>
         <Image>
-          <a href={props.linkGit}>
+          <a href={linkGit}>
             <FaGithub />
           </a>
         </Image>
@@ -44,9 +44,7 @@ const Download = styled.button`
   outline: none;
   border-color: transparent;
   padding: 10px;
-  b
-
-  a {
+  b a {
     color: black;
     text-decoration: none;
   }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Buttons from "../UI/Buttons";
-import homeimg from "../assets/homeImg.jpeg";
+import homeimg from "../assets/homeImage.jpg";
 import About from "./About";
 import Projects from "./Projects";
 import Contacts from "./Contact";
@@ -56,7 +56,8 @@ const Wrapper = styled.div`
 
   img {
     border-radius: 12px;
-    width: 400px;
+    width: 370px;
+    margin-top: 20px;
   }
 
   div {
